@@ -18,5 +18,11 @@ Hence this repo.
 
 ```bash
 export PS1='\[\e[35m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\]\w\[\e[33m\]$(__git_ps1 " (%s)")\[\e[m\]\n -> '
-#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+```
+
+**Stuff to install**
+
+```bash
+# https://github.com/tj/git-extras
+sudo apt-get install git-extras
 ```
