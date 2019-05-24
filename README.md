@@ -17,12 +17,17 @@ Hence this repo.
 .bashrc
 
 ```bash
+# Variables
 export PS1='\[\e[35m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\]\w\[\e[33m\]$(__git_ps1 " (%s)")\[\e[m\]\n -> '
+
+# Aliases
+alias xcclip="xclip -selection clipboard"
 ```
 
 **Stuff to install**
 
 ```bash
-# https://github.com/tj/git-extras
-sudo apt-get install git-extras
+# git-extras adds support for cool gitflow features like `git feature`
+# xclip is a handy util to copy stuff to clip board `echo "xyz" | xclip -selection clipboard`
+sudo apt-get install git-extras xclip
 ```
