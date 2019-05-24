@@ -31,3 +31,26 @@ alias xcclip="xclip -selection clipboard"
 # xclip is a handy util to copy stuff to clip board `echo "xyz" | xclip -selection clipboard`
 sudo apt-get install git-extras xclip
 ```
+
+## X1C1 Tweaks
+
+### Trackpoint not working after rebook
+
+Add the following script to this file (note it does not fix the issue completely but seems to break less often...) `/usr/lib/pm-utils/sleep.d/99restart-touchpad`
+
+```sh
+#!/bin/sh
+# Custom script I (chrism) added to resolve the x1c6 issues with reconnecting touchpad after waking up from deep sleep
+# See reference here: https://forums.lenovo.com/t5/Other-Linux-Discussions/Troubles-with-X1-Carbon-2018-X1C6-TouchPad-and-TrackPoint-under/td-p/4004815
+
+case "$1" in
+	thaw|resume) 
+		echo -n none > /sys/devices/platfrom/i8042/serio1/drvctl
+		echo -n reconnect > /sys/devices/platform/i8042/serio1/drvctl
+		;;
+	*) exit $NA
+		;;
+esac
+
+exit 0
+```
