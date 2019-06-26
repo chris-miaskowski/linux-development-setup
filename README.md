@@ -16,6 +16,15 @@ Hence this repo.
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 
+### Fixes (Ubuntu 19.02)
+
+### Ctrl + Alt + Left broken
+
+```bash
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
+```
+
 ## Bash
 
 .bashrc
