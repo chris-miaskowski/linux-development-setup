@@ -67,3 +67,8 @@ esac
 
 exit 0
 ```
+
+## Power Management
+
+- [powertop](https://www.youtube.com/watch?v=Ku0491LfhR4)
+- [tlp](https://www.youtube.com/watch?v=Ku0491LfhR4)
