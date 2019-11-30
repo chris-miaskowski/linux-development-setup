@@ -68,7 +68,11 @@ esac
 exit 0
 ```
 
-## Power Management
+## Power Management & Performance Tools
 
 - [powertop](https://www.youtube.com/watch?v=Ku0491LfhR4)
 - [tlp](https://www.youtube.com/watch?v=Ku0491LfhR4)
+- `iotop`
+- `sensors`
+- `htop`
+- `sysbench`
